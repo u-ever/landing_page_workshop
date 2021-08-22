@@ -1,0 +1,120 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header h1 {
+    color: white;
+    font-size: 26px;
+    background-color: #48c5ce;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+/*Section
+====================================================*/
+
+#main_lead{
+    padding: 20px;
+    background-image: url('../pictures/lecture1.png');
+    background-size: cover;
+    overflow: hidden;
+}
+
+#contato {
+    max-width: 230px;
+    background-color: #FFFFFFBB;
+    padding: 20px;
+    float: right;
+}
+
+#contato h2 {
+    font-size: 16px;
+}
+
+.mb {
+    margin-bottom: 15px;
+}
+
+input, select {
+    width: 100%;
+    box-sizing:border-box;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    color: white;
+    background-color: #48c5ce;
+    font-weight: bold;
+}
+
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url(../pictures/bxs-down-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: calc(100% - 10%) center;
+}
+
+
+/*Footer
+====================================================*/
+
+footer {
+    text-align: center;
+    background-color: #202121;
+    padding: 40px;
+}
+
+#speaker_img {
+    width: 160px;
+    filter: grayscale(1);
+}
+
+#description {
+    color: white;
+    display: inline-block;
+    max-width: 40%;
+    margin-left: 40px;
+    text-align: left;
+}
+
+#description h3, #description p {
+    margin-bottom: 10px;
+}
+
+#description h3  {
+    font-size: 24px
+}
+
+@media only screen and (max-width: 640px) {
+    #main_lead{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        background-position-x: -350px;
+    }
+    #contato {
+        float: none;
+    }
+    #description {
+        max-width: 60%;
+        margin-left: 0;
+    }
+} 

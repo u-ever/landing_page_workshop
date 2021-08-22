@@ -1,0 +1,119 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+/*Header
+====================================================*/
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header h1 {
+    font-size: 26px;
+    background-color: #48c5ce;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+/*Section
+====================================================*/
+
+#main_lead {
+    background-image: url(/pictures/lecture1.png);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.mb {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+#contato {
+    background-color: #FFFFFFBB;
+    color: black;
+    width: 230px;
+    margin: 20px;
+    padding: 20px;
+    float: right;
+}
+
+#form_contato input, select {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#select_form_contato {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url(/pictures/bxs-down-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10%) center;
+    background-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #48c5ce;
+    font-weight: bold;
+    color: white;
+}
+
+/*Footer
+====================================================*/
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #202121;
+}
+
+#speaker_img {
+    width: 160px;
+    filter: grayscale(1);
+}
+
+#description {
+    display: inline-block;
+    max-width: 40%;
+    text-align: left;
+    padding-left: 40px;
+}
+
+#description h3, p {
+    margin-bottom: 10px;
+}
+
+#description h3 {
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 640px) {
+    #main_lead{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        background-position-x: -350px;
+    }
+    #contato {
+        float: none;
+    }
+    #description {
+        max-width: 60%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+} 
